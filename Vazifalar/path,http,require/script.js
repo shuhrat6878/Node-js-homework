@@ -7,7 +7,7 @@ const filePath = path.join(__dirname, 'fruits.json');
 const server = http.createServer((req, res) => {
   if (req.method === 'GET') {
 
-    if (req.url === '/fruits') {
+    if (req.url === '/') {
       const data = fs.readFileSync(filePath, 'utf-8');
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(data);
@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify(fruit));
       } else {
         res.writeHead(404, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ message: 'Fruit not found' }));
+        res.end(JSON.stringify({ message: 'Fruit bosh' }));
       }
     }
 
@@ -65,7 +65,7 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify(fruits[index]));
       } else {
         res.writeHead(404, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ message: 'Fruit not found' }));
+        res.end(JSON.stringify({ message: 'Fruit bosh' }));
       }
     });
   }
@@ -82,7 +82,7 @@ const server = http.createServer((req, res) => {
       res.end(JSON.stringify(deleted[0]));
     } else {
       res.writeHead(404, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ message: 'Fruit not found' }));
+      res.end(JSON.stringify({ message: 'Fruit bosh' }));
     }
   }
 
@@ -93,5 +93,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, () => {
-  console.log('Server is running');
+  console.log('Server 3000  porta ulandi');
 });

@@ -1,0 +1,10 @@
+{
+
+  "scripts": {
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "formidable": "^3.5.4",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "fulname": "Aziz Xusnnidinov"
+  },
+  {
+    "id": 2,
+    "fulname": "Anorboyev Shuhrat",
+    "age": 26
+  },
+  {
+    "id": 3,
+    "fulname": "Otabek Yoldashev",
+    "age": 26
+  }
+]
